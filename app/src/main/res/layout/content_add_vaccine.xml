@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="?attr/colorPrimary"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="הוסף חיסון חדש"
+        android:id="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="#dde7ee"
+        android:elegantTextHeight="true"
+        android:textStyle="bold"
+        android:layout_weight="0.15"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/vaccineNameView"
+        android:background="@drawable/roundcorners"
+        android:layout_below="@+id/textView6"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:theme="@style/AppTheme"
+        android:elegantTextHeight="true"
+        android:hint="אנא הקלד את שם החיסון"
+        android:singleLine="true"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/vaccineSerialView"
+        android:layout_below="@+id/vaccineNameView"
+        android:background="@drawable/roundcorners"
+        android:hint="מספר סידורי"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/vaccinePortionView"
+        android:layout_below="@+id/vaccineSerialView"
+        android:background="@drawable/roundcorners"
+        android:hint="מספר מנה"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/vaccineExpirationView"
+        android:background="@drawable/roundcorners"
+        android:layout_below="@+id/vaccinePortionView"
+        android:layout_weight="0.17"
+        android:hint="תוקף החיסון"
+        android:textStyle="bold"
+        android:inputType="date"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/vaccinePlaceView"
+        android:background="@drawable/roundcorners"
+        android:layout_below="@+id/vaccineExpirationView"
+        android:hint="מיקום החיסון"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:clickable="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageBtnPlacesMap"
+        android:background="@null"
+        android:src="@drawable/maps_icon_blue"
+        android:layout_alignBottom="@+id/vaccinePlaceView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/vaccinePlaceView"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+        android:clickable="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/vaccineCommentsView"
+        android:background="@drawable/roundcorners"
+        android:layout_below="@+id/vaccinePlaceView"
+        android:layout_weight="0.12"
+        android:hint="הערות"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="אישור"
+        android:layout_below="@+id/vaccineCommentsView"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="@drawable/buttonshape"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/confirmVaccinAddingBtn"
+        android:layout_gravity="center_horizontal" />
+
+
+
+</RelativeLayout>

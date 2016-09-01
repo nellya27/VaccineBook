@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/papilomaVaccineTxt"
+        android:layout_marginTop="20dp"
+        android:text="פפילומה"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="@color/White"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ademetVaccineTxt"
+        android:layout_marginTop="20dp"
+        android:text="אדמת"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="@color/White"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/hazeretVaccineTxt"
+        android:layout_marginTop="20dp"
+        android:text="חזרת"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="@color/White"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/shapaatVaccineTxt"
+        android:layout_marginTop="20dp"
+        android:text="שפעת"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="@color/White"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/daleketKaved_Alef_VaccineTxt"
+        android:layout_marginTop="20dp"
+        android:text="דלקת כבד אלף"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="@color/White"/>
+
+</LinearLayout>
